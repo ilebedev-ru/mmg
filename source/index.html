@@ -12,15 +12,226 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="main-header">
-
+      <div class="main-header__wrapper">
+        <div class="main-header__logo">
+          <img src="img/png-01.png" alt="MMG Logotype" width="155" height="50">
+        </div>
+        <nav class="main-header__nav">
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a class="main-header__link" href="#header">Home</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="#news">News</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link main-header__link--products" href="#products">Products</a>
+              <ul class="main-header__inner-list">
+                <li class="main-header__inner-item">
+                  <a class="main-header__inner-link" href="#bot-checkin">BOT - CHECKIN</a>
+                </li>
+                <li class="main-header__inner-item">
+                  <a class="main-header__inner-link" href="#">SMART HOME</a>
+                </li>
+                <li class="main-header__inner-item">
+                  <a class="main-header__inner-link" href="#">SMART CAR</a>
+                </li>
+                <li class="main-header__inner-item">
+                  <a class="main-header__inner-link" href="#">SMART WALLET</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="#download">Download</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+          <button class="button main-header__button">Login</button>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="main">
+      <section class="intro">
+        <div class="intro__wrapper">
+          <div class="intro__logo">
+            <h1 class="intro__title">BLE</h1>
+            <p class="intro__title intro__title--second">Bluetooth Low Energy</p>
+            <p class="intro__title intro__title--third">TECHNOLOGY</p>
+          </div>
+          <ul class="intro__features-list">
+            <li class="intro__features-items">
+              <p class="intro__text">New avenue for Business</p>
+            </li>
+            <li class="intro__features-items">
+              <p class="intro__text">Creating a world in which the InterneT exists in our life</p>
+            </li>
+            <li class="intro__features-items">
+              <p class="intro__text">Actualizing the changing world through IoT</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="products">
+        <h2 class="visually-hidden">Our products</h2>
+        <div class="products__wrapper">
+          <ul class="products__slider">
+            <li class="products__items">
+              <div class="products__picture">
+                <img src="img/hand.png" alt="Bot-Checkin" width="705" height="482">
+              </div>
+              <div class="products__desc">
+                <p class="products__pre-title">Our first product of the IoT is</p>
+                <h3 class="products__name">BOT-Checkin</h3>
+                <p class="products__text">An efficient device for human resource manager</br>
+                The best replacement for the traditional time attendance checking methods such as Finger print scanner, Face recognition machine...</p>
+                <button class="button">VIEW BOT-CHECKIN</button>
+                <ul class="products__pagination">
+                  <li class="products__point products__point--active"><span class="visually-hidden">1 slide</span></li>
+                  <li class="products__point"><span class="visually-hidden">2 slide</span></li>
+                  <li class="products__point"><span class="visually-hidden">3 slide</span></li>
+                  <li class="products__point"><span class="visually-hidden">4 slide</span></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    </main class="main">
+      <section class="features">
+        <h2 class="visually-hidden">Features</h2>
+        <div class="features__wrapper">
+          <ul class="features__list">
+            <li class="features__item features__item--management">
+              <h3 class="features__title">
+                <b class="features__title features__title--bold">Easy</b>
+                management
+              </h3>
+              <p class="features__text">Administrators can log in the website to manage employees and make employee attendance reports</p>
+            </li>
+            <li class="features__item features__item--coast">
+              <h3 class="features__title">
+                <b class="features__title features__title--bold">Low</b> cost,
+                <b class="features__title features__title--bold">Easy</b> to use
+              </h3>
+              <p class="features__text">You do not have to buy time attendance machines at high prices, instead of that, you can deploy the system easily just with a beacon</p>
+            </li>
+            <li class="features__item features__item--coast">
+              <h3 class="features__title">
+                Check in / check out
+                <b class="features__title features__title--bold">Quickly</b>
+              </h3>
+              <p class="features__text">Employees will not be expected to queue up for check in, they can use the app to check in and check out immediately</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="download">
+        <div class="download__wrapper">
+          <div class="download__box">
+            <h2 class="download__title">Download to get started</h2>
+            <p class="download__text">A better way to present your apps, Now available on the App Store and Play Store!</p>
+            <a class="download__link" href="#"><img src="img/istore-1.png" alt="Download in App Store"></a>
+            <a class="download__link" href="#"><img src="img/gplay-1.png" alt="Download in Google Play"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <h2 class="visually-hidden">News</h2>
+        <div class="news__wrapper">
+          <ul class="news__list">
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <img src="img/Layer-3.jpg" alt="Why should cellular IoT be different to other technology rollouts?">
+                <h3 class="news__title">Why should cellular IoT be different to other technology rollouts?</h3>
+                <p class="news__text">Along comes the Internet of Things, and for some reason, the pundits begin to talk about the importance of introducing low-cost modules as an enabler for the market to take off.</p>
+                <div class="news__bottom-line">
+                  <p class="news__text news__text--date">Date: 20-07-2017</p>
+                  <p class="news__text news__text--comment">Comment: 0</p>
+                </div>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <img src="img/Layer-4.jpg" alt="Homeland Security invests $750k to secure IoT disaster sensors">
+                <h3 class="news__title">Homeland Security invests $750k to secure IoT disaster sensors</h3>
+                <p class="news__text">The Department of Homeland Security (DHS) has announced a $750k investment to develop a solution which bolsters the security of IoT disaster </p>
+                <div class="news__bottom-line">
+                  <p class="news__text news__text--date">Date: 20-07-2017</p>
+                  <p class="news__text news__text--comment">Comment: 0</p>
+                </div>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <img src="img/Layer-5.jpg" alt="Why IoT security is so important - and what to do about it">
+                <h3 class="news__title">Why IoT security is so important - and what to do about it</h3>
+                <p class="news__text">Is there a market hotter than the IoT? As manufacturers connect the internet to everything from baby monitors to automobiles, economic analysts such as Bain and McKinsey predict...</p>
+                <div class="news__bottom-line">
+                  <p class="news__text news__text--date">Date: 20-07-2017</p>
+                  <p class="news__text news__text--comment">Comment: 0</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title"><b class="contacts__title contacts__title--bold">Contact</b> with us</h2>
+          <p class="contacts__text">Contact us by phone or gmail to order new services, track orders and get customer service or tech support. </p>
+          <form action="#">
+            <input class="contacts__input" type="text" name="name" id="name" placeholder="Your Name">
+            <input class="contacts__input" type="email" name="email" id="email" placeholder="Email Address">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+            <button class="button contacts__button" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main >
 
     <footer class="main-footer">
-
+      <div class="main-footer__wrapper">
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <h3 class="main-footer__title">Company</h3>
+          <ul class="main-footer__inner-list">
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">Home</a></li>
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">News</a></li>
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">Download</a></li>
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">Contact us</a></li>
+          </ul>
+        </li>
+        <li class="main-footer__item">
+          <h3 class="main-footer__title">Products</h3>
+          <ul class="main-footer__inner-list">
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">BOT-CHECKIN</a></li>
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">SMART HOME</a></li>
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">SMART CAR</a></li>
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">SMART WALLET</a></li>
+          </ul>
+        </li>
+        <li class="main-footer__item">
+          <h3 class="main-footer__title">Other links</h3>
+          <ul class="main-footer__inner-list">
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">Customer Portal</a></li>
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">Support Portal</a></li>
+          </ul>
+        </li>
+        <li class="main-footer__item">
+          <ul class="main-footer__inner-list">
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">+84 2432 004 887 / +84 983 104 170</a></li>
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">contact@mmg.vn</a></li>
+            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">9th floor, Hanoi Women's Union building, 07 Ton That Thuyet street, Cau Giay dist, Hanoi, Vietnam</a></li>
+          </ul>
+        </li>
+      </ul>
+      </div>
     </footer>
     <script src="js/script.js"></script>
   </body>
