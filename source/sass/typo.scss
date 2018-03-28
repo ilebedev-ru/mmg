@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  min-width: $desktop-width;
+  background-color: $backgroung-color1;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize;
+  line-height: 25px;
+  color: $text-color1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
