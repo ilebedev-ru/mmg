@@ -1,0 +1,134 @@
+.intro {
+  width: 100%;
+  min-height: 600px;
+  padding-top: 127px;
+  margin-bottom: 15px;
+  background-color: $backgroung-color2;
+  background-image:
+    url("../img/Shape-12.svg"),
+    url("../img/Shape-11.svg"),
+    url("../img/Shape-10.svg"),
+    url("../img/main-background.png");
+  background-position:
+    0 101%,
+    0 110%,
+    0 110%,
+    0 0;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-size:
+    contain,
+    contain,
+    contain,
+    auto;
+}
+
+.intro__wrapper {
+  @include desktop-container;
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+}
+
+.intro__logo {
+  width: 225px;
+  margin-right: 120px;
+  margin-bottom: 20px;
+}
+
+.intro__title {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: $white;
+
+  &--second {
+    // position: relative;
+    display: block;
+    padding-top: 13px;
+    margin-bottom: 5px;
+    height: 42px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #172592;
+    z-index: 1;
+    background-color: $white;
+    border-radius: 14px 0px 14px 0px;
+  }
+
+  &--third {
+    font-size: 22px;
+    letter-spacing: normal;
+  }
+}
+
+.intro__features-list {
+  width: 390px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.intro__features-items {
+  position: relative;
+  margin-bottom: 100px;
+  padding-left: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--avenue,
+  &--creating,
+  &--changing {
+    &::before {
+      position: absolute;
+      left: 0;
+      content: '';
+      display: block;
+      width: 33px;
+      height: 33px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--avenue {
+    &::before {
+       background-image: url("../img/header-icon-1.svg");
+    }
+  }
+
+  &--creating {
+    &::before {
+       background-image: url("../img/header-icon-2.svg");
+    }
+  }
+
+  &--changing {
+    &::before {
+       background-image: url("../img/header-icon-4.svg");
+    }
+  }
+}
+
+.intro__text {
+  padding: 0;
+  margin: 0;
+
+  color: $white;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+}

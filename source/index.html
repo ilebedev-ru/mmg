@@ -60,23 +60,23 @@
             <p class="intro__title intro__title--third">TECHNOLOGY</p>
           </div>
           <ul class="intro__features-list">
-            <li class="intro__features-items">
+            <li class="intro__features-items intro__features-items--avenue">
               <p class="intro__text">New avenue for Business</p>
             </li>
-            <li class="intro__features-items">
+            <li class="intro__features-items intro__features-items--creating">
               <p class="intro__text">Creating a world in which the InterneT exists in our life</p>
             </li>
-            <li class="intro__features-items">
+            <li class="intro__features-items intro__features-items--changing">
               <p class="intro__text">Actualizing the changing world through IoT</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="products">
+      <section class="products" id="products">
         <h2 class="visually-hidden">Our products</h2>
-        <div class="products__wrapper">
-          <ul class="products__slider">
-            <li class="products__items">
+        <ul class="products__slider">
+          <li class="products__items">
+            <div class="products__wrapper">
               <div class="products__picture">
                 <img src="img/hand.png" alt="Bot-Checkin" width="705" height="482">
               </div>
@@ -85,17 +85,31 @@
                 <h3 class="products__name">BOT-Checkin</h3>
                 <p class="products__text">An efficient device for human resource manager</br>
                 The best replacement for the traditional time attendance checking methods such as Finger print scanner, Face recognition machine...</p>
-                <button class="button">VIEW BOT-CHECKIN</button>
-                <ul class="products__pagination">
-                  <li class="products__point products__point--active"><span class="visually-hidden">1 slide</span></li>
-                  <li class="products__point"><span class="visually-hidden">2 slide</span></li>
-                  <li class="products__point"><span class="visually-hidden">3 slide</span></li>
-                  <li class="products__point"><span class="visually-hidden">4 slide</span></li>
-                </ul>
+                <button class="button products__button">VIEW BOT-CHECKIN</button>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+
+  <!--         <li class="products__items">
+            <div class="products__wrapper products__wrapper--left">
+              <div class="products__desc products__desc--left">
+                <p class="products__pre-title">Our SECOND product of the IoT is </p>
+                <h3 class="products__name">SMART HOME</h3>
+                <p class="products__text">Instead of fingerprint machine and real time check... Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Vivamus massa risus, eleifend nec lorem id, dignissim maximus enim.</p>
+                <button class="button products__button">VIEW SMART HOME</button>
+              </div>
+              <div class="products__picture">
+                <img src="img/house.png" alt="Smart-Home" width="705" height="482">
+              </div>
+            </div>
+          </li> -->
+        </ul>
+        <ul class="products__pagination products__pagination--left">
+          <li class="products__point products__point--active"><span class="visually-hidden">1 slide</span></li>
+          <li class="products__point"><span class="visually-hidden">2 slide</span></li>
+          <li class="products__point"><span class="visually-hidden">3 slide</span></li>
+          <li class="products__point"><span class="visually-hidden">4 slide</span></li>
+        </ul>
       </section>
 
       <section class="features">
@@ -116,7 +130,7 @@
               </h3>
               <p class="features__text">You do not have to buy time attendance machines at high prices, instead of that, you can deploy the system easily just with a beacon</p>
             </li>
-            <li class="features__item features__item--coast">
+            <li class="features__item features__item--check">
               <h3 class="features__title">
                 Check in / check out
                 <b class="features__title features__title--bold">Quickly</b>
@@ -130,10 +144,10 @@
       <section class="download">
         <div class="download__wrapper">
           <div class="download__box">
-            <h2 class="download__title">Download to get started</h2>
+            <h2 class="download__title"><span class="download__title--bold">Download</span> to get started</h2>
             <p class="download__text">A better way to present your apps, Now available on the App Store and Play Store!</p>
-            <a class="download__link" href="#"><img src="img/istore-1.png" alt="Download in App Store"></a>
             <a class="download__link" href="#"><img src="img/gplay-1.png" alt="Download in Google Play"></a>
+            <a class="download__link" href="#"><img src="img/istore-1.png" alt="Download in App Store"></a>
           </div>
         </div>
       </section>
@@ -144,34 +158,46 @@
           <ul class="news__list">
             <li class="news__item">
               <a class="news__link" href="#">
-                <img src="img/Layer-3.jpg" alt="Why should cellular IoT be different to other technology rollouts?">
-                <h3 class="news__title">Why should cellular IoT be different to other technology rollouts?</h3>
-                <p class="news__text">Along comes the Internet of Things, and for some reason, the pundits begin to talk about the importance of introducing low-cost modules as an enabler for the market to take off.</p>
-                <div class="news__bottom-line">
-                  <p class="news__text news__text--date">Date: 20-07-2017</p>
-                  <p class="news__text news__text--comment">Comment: 0</p>
+                <div class="news__img">
+                  <img src="img/Layer-3.jpg" alt="Why should cellular IoT be different to other technology rollouts?">
+                </div>
+                <div class="news_desc">
+                  <h3 class="news__title">Why should cellular IoT be different to other technology rollouts?</h3>
+                  <p class="news__text">Along comes the Internet of Things, and for some reason, the pundits begin to talk about the importance of introducing low-cost modules as an enabler for the market to take off.</p>
+                  <div class="news__bottom-line">
+                    <p class="news__text news__text--date">Date: 20-07-2017</p>
+                    <p class="news__text news__text--comment">Comment: 0</p>
+                  </div>
                 </div>
               </a>
             </li>
             <li class="news__item">
               <a class="news__link" href="#">
-                <img src="img/Layer-4.jpg" alt="Homeland Security invests $750k to secure IoT disaster sensors">
-                <h3 class="news__title">Homeland Security invests $750k to secure IoT disaster sensors</h3>
-                <p class="news__text">The Department of Homeland Security (DHS) has announced a $750k investment to develop a solution which bolsters the security of IoT disaster </p>
-                <div class="news__bottom-line">
-                  <p class="news__text news__text--date">Date: 20-07-2017</p>
-                  <p class="news__text news__text--comment">Comment: 0</p>
+                <div class="news__img">
+                  <img src="img/Layer-4.jpg" alt="Homeland Security invests $750k to secure IoT disaster sensors">
+                </div>
+                <div class="news_desc">
+                  <h3 class="news__title">Homeland Security invests $750k to secure IoT disaster sensors</h3>
+                  <p class="news__text">The Department of Homeland Security (DHS) has announced a $750k investment to develop a solution which bolsters the security of IoT disaster </p>
+                  <div class="news__bottom-line">
+                    <p class="news__text news__text--date">Date: 20-07-2017</p>
+                    <p class="news__text news__text--comment">Comment: 0</p>
+                  </div>
                 </div>
               </a>
             </li>
             <li class="news__item">
               <a class="news__link" href="#">
-                <img src="img/Layer-5.jpg" alt="Why IoT security is so important - and what to do about it">
-                <h3 class="news__title">Why IoT security is so important - and what to do about it</h3>
-                <p class="news__text">Is there a market hotter than the IoT? As manufacturers connect the internet to everything from baby monitors to automobiles, economic analysts such as Bain and McKinsey predict...</p>
-                <div class="news__bottom-line">
-                  <p class="news__text news__text--date">Date: 20-07-2017</p>
-                  <p class="news__text news__text--comment">Comment: 0</p>
+                <div class="news__img">
+                  <img src="img/Layer-5.jpg" alt="Why IoT security is so important - and what to do about it">
+                </div>
+                <div class="news_desc">
+                  <h3 class="news__title">Why IoT security is so important - and what to do about it</h3>
+                  <p class="news__text">Is there a market hotter than the IoT? As manufacturers connect the internet to everything from baby monitors to automobiles, economic analysts such as Bain and McKinsey predict...</p>
+                  <div class="news__bottom-line">
+                    <p class="news__text news__text--date">Date: 20-07-2017</p>
+                    <p class="news__text news__text--comment">Comment: 0</p>
+                  </div>
                 </div>
               </a>
             </li>
@@ -183,11 +209,14 @@
         <div class="contacts__wrapper">
           <h2 class="contacts__title"><b class="contacts__title contacts__title--bold">Contact</b> with us</h2>
           <p class="contacts__text">Contact us by phone or gmail to order new services, track orders and get customer service or tech support. </p>
-          <form action="#">
+          <form action="#" class="contacts__form">
             <input class="contacts__input" type="text" name="name" id="name" placeholder="Your Name">
             <input class="contacts__input" type="email" name="email" id="email" placeholder="Email Address">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
-            <button class="button contacts__button" type="submit">Send</button>
+            <textarea class="contacts__textarea" name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+            <button class="button contacts__button" type="submit">
+              <span class="contacts__button-text-A">Send</span>
+              <span class="contacts__button-text-B">Send Message</span>
+            </button>
           </form>
         </div>
       </section>
@@ -221,11 +250,17 @@
             <li class="main-footer__inner-item"><a class="main-footer__link" href="#">Support Portal</a></li>
           </ul>
         </li>
-        <li class="main-footer__item">
+        <li class="main-footer__contacts">
           <ul class="main-footer__inner-list">
-            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">+84 2432 004 887 / +84 983 104 170</a></li>
-            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">contact@mmg.vn</a></li>
-            <li class="main-footer__inner-item"><a class="main-footer__link" href="#">9th floor, Hanoi Women's Union building, 07 Ton That Thuyet street, Cau Giay dist, Hanoi, Vietnam</a></li>
+            <li class="main-footer__contacts-item main-footer__contacts-item--tel">
+              <a class="main-footer__link" href="#">+84 2432 004 887 / +84 983 104 170</a>
+            </li>
+            <li class="main-footer__contacts-item main-footer__contacts-item--mail">
+              <a class="main-footer__link" href="#">contact@mmg.vn</a>
+            </li>
+            <li class="main-footer__contacts-item main-footer__contacts-item--loc">
+              <a class="main-footer__link" href="#">9th floor, Hanoi Women's Union building, 07 Ton That Thuyet street, Cau Giay dist, Hanoi, Vietnam</a>
+            </li>
           </ul>
         </li>
       </ul>
