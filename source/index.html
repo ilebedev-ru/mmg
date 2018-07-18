@@ -75,7 +75,7 @@
       <section class="products" id="products">
         <h2 class="visually-hidden">Our products</h2>
         <ul class="products__slider">
-          <li class="products__items">
+          <li class="products__items products__items--active" data-id="1">
             <div class="products__wrapper">
               <div class="products__picture">
                 <img src="img/hand.png" alt="Bot-Checkin" width="705" height="482">
@@ -89,7 +89,7 @@
               </div>
             </div>
           </li>
-          <li class="products__items visually-hidden">
+          <li class="products__items products__items--not-active" data-id="2">
             <div class="products__wrapper products__wrapper--left">
               <div class="products__desc products__desc--left">
                 <p class="products__pre-title">Our SECOND product of the IoT is </p>
@@ -103,17 +103,21 @@
             </div>
           </li>
         </ul>
-        <ul class="products__pagination"> <!-- products__pagination--left -->
-          <li class="products__point products__point--active"><span class="visually-hidden">1 slide</span></li>
-          <li class="products__point"><span class="visually-hidden">2 slide</span></li>
-        </ul>
+        <div class="products__pagination">
+          <button class="products__point products__point--active" data-id="1">
+            <span class="visually-hidden">1 slide</span>
+          </button>
+          <button class="products__point" data-id="2">
+            <span class="visually-hidden">2 slide</span>
+          </button>
+        </div>
       </section>
 
       <section class="features">
         <h2 class="visually-hidden">Features</h2>
         <div class="features__wrapper">
           <ul class="features__list">
-            <li class="features__item features__item--management">
+            <li class="features__item features__item--management features__item--active">
               <h3 class="features__title">
                 <b class="features__title features__title--bold">Easy</b>
                 management

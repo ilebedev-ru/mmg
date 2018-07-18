@@ -13,6 +13,7 @@
 }
 
 .features__list {
+  width: 470px;
   margin: 0;
   padding: 0;
 
@@ -21,7 +22,6 @@
 
 .features__item {
   position: relative;
-  width: 470px;
   max-height: 160px;
   padding-top: 25px;
   padding-bottom: 50px;
@@ -62,6 +62,26 @@
   &:focus {
     background: $white;
     box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.08);
+  }
+
+  &--active {
+    background: $white;
+    box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.08);
+  }
+}
+
+.features__list {
+  &:hover,
+  &:focus {
+    .features__item--active {
+      background: none;
+      box-shadow: none;
+      &:hover,
+      &:focus {
+        background: $white;
+        box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.08);
+      }
+    }
   }
 }
 

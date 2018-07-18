@@ -45,6 +45,11 @@
   font-size: 15px;
   line-height: 21px;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .main-footer__contacts {
